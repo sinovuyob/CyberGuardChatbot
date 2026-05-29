@@ -7,3 +7,7 @@ A conversational AI-powered chatbot designed to educate users about cybersecurit
 *ChatMessage class* - This class stores all the information for a single message in the conversation. It holds the sender name, message text, timestamp, alignment (left or right), and bubble color. When a message is created, it automatically sets the alignment and color based on whether it's a user message or bot message.
 
 *Audiomanager class* - This class plays the greeting sound when the application starts. It locates the greeting.wav file in the Audio folder and plays it using Windows SoundPlayer. If the file is missing, it fails silently without crashing.
+
+*ChatEngine class* - This class is the brain that generates responses based on what the user types. It checks for keywords like "password", "scam", "privacy", or "virus" and returns relevant cybersecurity tips. It also remembers the last topic discussed so when the user says "another", it provides a follow-up tip on the same subject.
+
+

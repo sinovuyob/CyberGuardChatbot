@@ -2,12 +2,43 @@
 
 CyberGuard Chatbot is a desktop application built with WPF (Windows Presentation Foundation) that serves as a cybersecurity awareness assistant. The chatbot engages users in conversations about online safety, providing educational tips and guidance on four main topics: password security, scam/phishing protection, privacy protection, and virus/malware prevention. The application features a graphical user interface with a warm brown and nude color scheme, audio greeting playback, memory functionality that remembers conversation context, and basic sentiment detection.
 
-*Main Window class* - This class controls the user interface and handles what happens when users type messages or click buttons. It displays messages in the chat area, calls the chatbot to get responses, and updates the status bar and current topic display. It also clears the chat when the CLEAR button is clicked and sends messages when Enter is pressed.
+ADDED FEATURES FOR PART 3:
+Intelligent Chatbot
+- *Keyword Recognition*: Detects topics like passwords, scams, privacy, and phishing
+- *Sentiment Detection*: Identifies user emotions (worried, curious, frustrated) and responds empathetically
+- *Memory & Recall*: Remembers user preferences and conversation context
+- *Random Responses*: Provides varied tips to keep conversations engaging
 
-*ChatMessage class* - This class stores all the information for a single message in the conversation. It holds the sender name, message text, timestamp, alignment (left or right), and bubble color. When a message is created, it automatically sets the alignment and color based on whether it's a user message or bot message.
+ Task Management
+- *Add Tasks*: Create cybersecurity-related tasks (e.g., "Enable two-factor authentication")
+- *Set Reminders*: Add optional reminders with specific dates
+- *View Tasks*: Display pending and completed tasks
+- *Complete/Delete Tasks*: Mark tasks as done or remove them
+- *Persistent Storage*: Tasks saved in SQL Server database
 
-*Audiomanager class* - This class plays the greeting sound when the application starts. It locates the greeting.wav file in the Audio folder and plays it using Windows SoundPlayer. If the file is missing, it fails silently without crashing.
+Cybersecurity Quiz
+- *12 Questions*: Multiple-choice and true/false questions
+- *Immediate Feedback*: Learn why answers are correct or incorrect
+- *Score Tracking*: View percentage and personalized feedback
+- *Topics Covered*: Phishing, password safety, privacy, malware, social engineering
 
-*ChatEngine class* - This class is the brain that generates responses based on what the user types. It checks for keywords like "password", "scam", "privacy", or "virus" and returns relevant cybersecurity tips. It also remembers the last topic discussed so when the user says "another", it provides a follow-up tip on the same subject.
+Activity Logging
+- *Track Actions*: Records all significant bot actions
+- *Timestamps*: Each entry includes date and time
+- *Log Types*: Task added, completed, deleted, quiz started, quiz completed, NLP interactions
+- *View Logs*: Display recent or full activity history
 
+ User Interface
+- *Clean Design*: Warm brown and nude color scheme
+- *Chat Bubbles*: Different colors for user and bot messages
+- *Quick Action Buttons*: One-click access to all features
+- *Status Updates*: Real-time feedback on actions
+- *ASCII Art Header*: Custom branding
+
+  TECHNOLOGY USED:
+   *C# / .NET 6.0* Core programming language and framework 
+  *WPF (Windows Presentation Foundation)* GUI framework 
+  *SQL Server* Database for task storage
+  *Microsoft.Data.SqlClient* SQL Server database connectivity
+  *XAML* UI markup language 
 
